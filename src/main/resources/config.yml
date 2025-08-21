@@ -1,0 +1,10 @@
+# LessDeathMessage plugin configuration
+
+# In time-range seconds, a player can have at most <limit> death messages
+time-range: 60
+limit: 6
+
+# For repeated identical death messages, use stricter limits
+# In repeat-time-range seconds, a player can have at most <repeat-limit> identical death messages
+repeat-time-range: 20
+repeat-limit: 3

@@ -1,0 +1,24 @@
+#file: noinspection PluginYml,YAMLSchemaValidation
+name: ${plugin_name}
+version: ${plugin_version}
+main: ${main_class}
+api-version: ${api_version}
+authors: [ ${author} ]
+description: Prevents death message spam.
+website: https://github.com/AsOne2020/LessDeathMessage
+folia-supported: true
+
+commands:
+  lessdeath:
+    description: Reload config of LessDeathMessage
+    usage: /lessdeath reload
+    permission: lessdeathmessage.admin
+
+permissions:
+  lessdeathmessage.admin:
+    description: Allows reloading plugin configuration
+    default: op
+
+  lessdeathmessage.bypass:
+    description: Player with this permission will never be limited
+    default: false
